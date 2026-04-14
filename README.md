@@ -76,25 +76,19 @@
     - 2D关卡编辑 (`Tilemap`)
 
 ## 📁 项目结构
-# 项目根目录
-├── 📁 Build/ # 【游戏发布版本】- 下载后可直接运行
-│ ├── 🎮 哈姆大冒险.exe # 游戏主程序
-│ ├── 🔧 UnityPlayer.dll # Unity 运行时动态库
-│ ├── 📦 MonoBleedingEdge/ # .NET 运行时环境
-│ ├── 📁 哈姆大冒险_Data/ # 游戏资源文件（关卡、配置、脚本等）
-│ │ ├── level0, level1... # 游戏关卡数据
-│ │ ├── globalgamemanagers # 游戏全局配置
-│ │ ├── Managed/ # 托管代码程序集
-│ │ └── ... # 其他必要资源
-│ ├── ⚙️ UnityCrashHandler64.exe
-│ └── 📄 操作指南.txt # 游戏操作说明
-│
-├── 📁 Project/ # 【Unity 工程源码】- 供开发者查看与编译
-│ ├── 📁 Assets/ # 游戏资源目录（模型、脚本、音效等）
-│ ├── 📁 ProjectSettings/ # Unity 项目设置
-│ ├── 📁 Packages/ # 项目所依赖的包
-│ └── 📄 My project (5).sln # Visual Studio 解决方案文件
-│
-├── 📄 README.md # 项目说明文档（本文档）
-├── 📄 .gitignore # Git 忽略配置文件
-└── 📁 .git/ # Git 版本控制目录
+
+```
+哈姆大冒险/                      # 项目根目录
+├── 📁 Build/                  # 【发布版本】包含完整的可执行游戏
+│   ├── 🎮 哈姆大冒险.exe      # 游戏主程序，双击即可开始游戏
+│   ├── ⚙️ UnityPlayer.dll     # Unity 运行时核心库，游戏运行必需
+│   ├── ⚙️ UnityCrashHandler64.exe # Unity 崩溃处理器，用于处理异常情况
+│   ├── 📁 MonoBleedingEdge/  # .NET 运行时环境，提供脚本执行支持
+│   ├── 📁 哈姆大冒险_Data/   # 游戏资源文件（场景、贴图、音频、配置等）
+│   └── 📄 操作指南.txt       # 游戏安装与操作说明文档
+├── 📁 Project/                # 【工程源码】完整的 Unity 2022 项目
+│   ├── 📁 Assets/            # 游戏核心资源（场景、脚本、预制体、音效等）
+│   ├── 📁 ProjectSettings/   # Unity 项目配置（编辑器设置、物理、输入等）
+│   └── 📁 Packages/          # Unity 包管理依赖（第三方插件和工具）
+├── 📄 README.md              # 项目说明文档（即本文档），包含项目介绍和使用方法
+```
